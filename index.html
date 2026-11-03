@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="styles.css">
         <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
         <script src="app.js"></script>
-        <?php include 'superheroes.php';?>
     </head>
     <body>
         <header>
@@ -17,14 +16,17 @@
             <div>
                 <p>Search by Full Name or Alias</p>
                 <form>
-                    <input type="text" id="searchInput" placeholder="Enter character name...">
+                    <input type="text" id="searchInput" placeholder="e.g. Captain America or Steve Rogers">
+                    <button type = "button" id = "btn">Search</button>
                 </form>
-                <button action = "echo superheroes.php" method = "POST" type = "button" id = btn>Search</button>
             </div>
             <div>
                 <h2>RESULT</h2>
             </div>
+
             <hr>
+
+            <div id = rsltspace></div>
 
         </main>
         <footer>
